@@ -7,6 +7,7 @@
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+   
 }
 
 .nav {
@@ -24,13 +25,14 @@
 
 .nav__logo,
 .nav__toggle {
-    color: var(--title-color);
     font-weight: var(--font-medium);
+    color: #ffff;
 }
 
 .nav__list {
     display:flex;
     column-gap: 2rem;
+    
 }
 
 .nav__link {
@@ -40,8 +42,8 @@
     font-size: var(--small-font-size);
     color: var(--title-color);
     font-weight:var(--font-medium);
-    transition: .3s;
-    margin-left: 3rem;
+    padding: 0.5rem 1rem;
+    color: #ffff;
 }
 
 
@@ -60,8 +62,20 @@
 /* Active link */
 .active-link,
 .nav__link:hover {
-    color: #5D5FEF;
-    text-decoration: underline
+    border-radius: 2rem ;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.active-link{
+    color: #ffff;
+    background-color: #6869D1;
+    border: 1px solid #6869D1;
+}
+
+.nav__link:hover {
+    border: 1px solid #6869D1;
+    background-color: #686ad136;
 }
 
 /* Breakpotnts */
@@ -125,6 +139,30 @@
 }
 
 /* For small devices */
+
+@media screen and (max-width: 768px) {
+    .nav__list {
+      margin-top: 5rem;
+    }
+    
+    .nav__link {
+        padding: 1.5rem 1rem;
+    }
+
+    .active-link{
+        background-color: transparent;
+        border: none;
+    }
+    .nav__link:hover {
+        border-radius: 1rem ;
+        padding: 1.5rem 1rem;
+    }
+    
+
+   
+}
+
+
 @media screen and (max-width: 350px) {
     .nav__menu {
         padding: 2rem 0.25rem 4rem;
@@ -133,4 +171,6 @@
     .nav__link {
         column-gap: 0;
     }
+
 }
+

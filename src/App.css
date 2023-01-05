@@ -1,16 +1,15 @@
-/* Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
 
 /* BASE*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: #232334;
 }
 
 body,
@@ -73,9 +72,8 @@ img {
 
 /* Layout */
 .container {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .grid {
